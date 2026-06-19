@@ -1314,14 +1314,8 @@ def _(
                 relatorio_metodologico_html
             ])
 
-    scrollable_container = mo.Html(f"""
-    <div style="height: calc(100vh - 280px); overflow-y: auto; overflow-x: hidden; padding-right: 15px; padding-bottom: 150px;">
-        {dash_content.text}
-    </div>
-    """)
-
     # A última expressão do bloco é exibida na tela do dashboard.
-    scrollable_container
+    dash_content
     return
 
 
